@@ -1,4 +1,6 @@
-
+* {
+    border: 1px solid red;
+}
 
 body {
     margin: 0;
@@ -8,7 +10,7 @@ body {
     justify-content: space-between;
 }
 
-
+/* start of header ---------------------------------------------------*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -18,6 +20,10 @@ body {
     gap: 25px;
     padding-bottom: 10vh;
 }   
+
+.firstHeaderText {
+    margin-left: 20px;
+}
 
 .header .containerOne {
     display: flex;
@@ -53,6 +59,7 @@ body {
 
 .sideContent button {
     background-color: rgb(8, 133, 243);
+    border: 1px solid rgb(8, 133, 243);
     border-radius: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -77,10 +84,8 @@ body {
 
 .card {
     border: 1px solid rgb(8, 157, 238);
-    box-sizing: border-box;
     box-shadow: 5px -5px 10px rgb(83, 80, 80);
     display: flex;
-    padding: 0;
     flex: auto;
     justify-content: center;
     align-items: center;
@@ -93,7 +98,9 @@ body {
     justify-content: space-between;
     gap: 9px;
 }
+/* end of header ---------------------------------------------------*/
 
+/* start of second part of page ---------------------------------------------------*/
 .secondContent {
     display: flex;
     flex-direction: column;
@@ -132,6 +139,77 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 15px;
+}
+/* end of second part of page ----------------------------------------------*/
+
+.thirdContent {
+    display: flex;
+    background: rgb(214, 214, 214);
+    padding: 90px;
+    justify-content: center;
+}
+
+.thirdContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;    
+}
+
+.thirdText {
+    font-style: italic;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.thirdTextName {
+    align-self: flex-end;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* end of third content */
+
+.footer {
+    padding: 30px;
+}
+
+.footerContainer {
+    background: rgb(12, 89, 255);
+    display: flex;
+    color: white;
+    padding: 25px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.footerSubcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.lastButton {
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(12, 89, 255);
+    border: 1px solid white;
+    color: white;
+    align-self: center;
+    height: 35px;
+    margin-right: 25px;
+}
+
+.footerHeaderText {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.footerSubtext {
+    font-size: 13px;
 }
 
 ul {
